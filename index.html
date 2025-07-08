@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Find Your Path to Independence - Disability Services Cockburn Central
+    </title>
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script/index.js" defer></script>
+  </head>
+  <body>
+    <nav class="cascade-d-nav-container">
+      <div class="cascade-wrapper">
+        <div class="cascade-d-navigation">
+          <div class="cascade-d-logo">
+            <img src="./assets/logo.png" alt="PathWay Services Logo" />
+          </div>
+          <ul class="cascade-d-nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-choose-us">Why Choose Us</a></li>
+            <li class="cascade-d-dropdown">
+              <a href="#services">Services</a>
+              <div class="cascade-d-dropdown-content">
+                <a href="#personal-care">Personal Care</a>
+                <a href="#community-support">Community Support</a>
+                <a href="#daily-living">Daily Living Skills</a>
+                <a href="#respite-care">Respite Care</a>
+                <a href="#transportation">Transportation</a>
+              </div>
+            </li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <a
+            href="#referral"
+            class="cascade-d-btn-referral cascade-d-btn-filled"
+            >Make a Referral</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="cascade-d-banner">
+      <div class="cascade-d-banner-content cascade-wrapper">
+        <div class="cascade-d-banner-left">
+          <h1>Find Your Path <br />to Independence</h1>
+          <p>
+            Your Trusted Disability Services and Support Organization in
+            Cockburn Central, Western Australia — Providing Compassionate,
+            Personalised Care and Empowering Support to Help You Live Life to
+            the Fullest.
+          </p>
+          <div class="cascade-d-about-left-btn-container">
+            <a
+              href="tel:+61468321024"
+              class="cascade-d-phone-btn cascade-d-btn-filled"
+            >
+              <i class="fas fa-phone-alt"></i> +61 468 321 024
+            </a>
+            <img
+              src="./assets//google-icon.png"
+              alt="Google Icon"
+              class="cascade-d-phone-icon"
+            />
+          </div>
+        </div>
+        <div class="cascade-d-banner-right">
+          <form class="cascade-d-contact-form">
+            <h3>Make a Referral</h3>
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-name">Name</label>
+              <input
+                placeholder="Enter your full name"
+                type="text"
+                id="cascade-d-name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-email">Email Address</label>
+              <input
+                placeholder="name@example.com"
+                type="email"
+                id="cascade-d-email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-phone">Phone</label>
+              <input
+                placeholder="Enter your phone number"
+                type="tel"
+                id="cascade-d-phone"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-suburb">Suburb</label>
+              <input
+                placeholder="Enter your suburb or area"
+                type="text"
+                id="cascade-d-suburb"
+                name="suburb"
+                required
+              />
+            </div>
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-message">Message</label>
+              <textarea
+                id="cascade-d-message"
+                name="message"
+                placeholder="Type your message or specific request here"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="cascade-d-submit-btn cascade-d-btn-filled"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="cascade-d-services-section">
+      <div class="cascade-wrapper">
+        <div class="cascade-d-text-center">
+          <p class="cascade-d-subheading">NDIS</p>
+          <h2 class="cascade-d-heading">Services we Provide</h2>
+          <p class="cascade-d-paragraph">
+            A strong focus on positive outcomes is at the forefront of our
+            approach. We offer at-home or in-clinic options for our services.
+          </p>
+        </div>
+
+        <div class="cascade-d-cards-grid">
+          <!-- Repeatable Service Cards -->
+          <div class="cascade-d-card">
+            <img
+              src="./assets/services1.png"
+              alt="Service 1"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">Community Access</h3>
+              <p class="cascade-d-card-desc">
+                We help clients engage with the community through guided support
+                and social activities.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="cascade-d-card">
+            <img
+              src="./assets/services2.png"
+              alt="Service 2"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">Daily Living Support</h3>
+              <p class="cascade-d-card-desc">
+                Assisting with daily tasks to promote independence in everyday
+                life.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="cascade-d-card">
+            <img
+              src="./assets/services3.png"
+              alt="Service 3"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">Transport Services</h3>
+              <p class="cascade-d-card-desc">
+                Reliable and safe transport for appointments, errands, and
+                events.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="cascade-d-card">
+            <img
+              src="../assets/services4.png"
+              alt="Service 4"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">Personal Care</h3>
+              <p class="cascade-d-card-desc">
+                Dignified support with hygiene, grooming, and other personal
+                needs.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="cascade-d-card">
+            <img
+              src="./assets/services5.png"
+              alt="Service 5"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">Respite Care</h3>
+              <p class="cascade-d-card-desc">
+                Temporary relief for primary carers through trusted short-term
+                care.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+
+          <div class="cascade-d-card">
+            <img
+              src="./assets/services6.png"
+              alt="Service 6"
+              class="cascade-d-card-img"
+            />
+            <div class="cascade-d-card-body">
+              <h3 class="cascade-d-card-title">In-Home Support</h3>
+              <p class="cascade-d-card-desc">
+                Flexible assistance delivered in the comfort of your own home.
+              </p>
+              <button class="cascade-d-learn-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cascade-d-bottom-cta">
+          <button class="cascade-d-referral-btn">Make a Referral</button>
+          <p class="cascade-d-call-text">
+            or call <a href="tel:+61468321024">+61 468 321 024</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cascade-d-why-choose-section">
+      <div class="cascade-wrapper">
+        <div class="cascade-d-text-center">
+          <p class="cascade-d-subheading">Excellence</p>
+          <h2 class="cascade-d-heading">Why Choose Us</h2>
+        </div>
+
+        <div class="cascade-d-why-cards-grid">
+          <!-- Repeat for 6 cards -->
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why1.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">Compassionate Care</h3>
+              <p class="cascade-d-card-desc">
+                Our team is dedicated to providing genuine support with kindness
+                and empathy.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why2.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">Tailored Services</h3>
+              <p class="cascade-d-card-desc">
+                We personalise every service to match your unique needs and
+                preferences.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why3.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">Qualified Staff</h3>
+              <p class="cascade-d-card-desc">
+                Our trained professionals ensure high standards of support and
+                safety.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why4.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">24/7 Availability</h3>
+              <p class="cascade-d-card-desc">
+                We're always here when you need us, day or night.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why5.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">Community Focus</h3>
+              <p class="cascade-d-card-desc">
+                Helping clients connect and thrive within their community is at
+                our core.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="cascade-d-why-card"
+            style="background-image: url('./assets/why6.png')"
+          >
+            <div class="cascade-d-why-card-overlay">
+              <h3 class="cascade-d-card-title">NDIS Expertise</h3>
+              <p class="cascade-d-card-desc">
+                We understand NDIS inside and out—so you don’t have to worry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cascade-d-bottom-cta">
+          <button class="cascade-d-referral-btn">Make a Referral</button>
+          <br />
+          <a
+            href="tel:+61468321024"
+            class="cascade-d-gradient-btn cascade-d-btn-filled"
+            >+61 468 321 024</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="cascade-d-about-section">
+      <div class="cascade-wrapper cascade-d-about-wrapper">
+        <div class="cascade-d-about-left">
+          <p class="cascade-d-subheading">Who We Are</p>
+          <h2 class="cascade-d-heading">About Us</h2>
+          <p class="cascade-d-paragraph">
+            At Intracare Services, we specialise in disability specific
+            (paediatric and adult) occupational therapy - functional capacity
+            and housing assessments, daily living skills capacity building,
+            assistive technology and accommodation transition planning.
+            <br /><br />
+            Our AHPRA registered therapists work with managing various
+            disabilities to help improve quality of life and independence.
+          </p>
+
+          <h4 class="cascade-d-list-title">What we offer:</h4>
+          <ul class="cascade-d-about-list">
+            <li>
+              <i class="fa fa-check-circle"></i>Comprehensive Disability
+              Services
+            </li>
+            <li><i class="fa fa-check-circle"></i>Empowering Lives Daily</li>
+            <li><i class="fa fa-check-circle"></i>Your Support Solutions</li>
+            <li><i class="fa fa-check-circle"></i>Building Ability Together</li>
+            <li><i class="fa fa-check-circle"></i>Everyday Living Support</li>
+            <li><i class="fa fa-check-circle"></i>Complete Care Services</li>
+            <li>
+              <i class="fa fa-check-circle"></i>Independent Living Support
+            </li>
+            <li><i class="fa fa-check-circle"></i>Skills for Independence</li>
+            <li>
+              <i class="fa fa-check-circle"></i>Tailored Disability Support
+            </li>
+            <li><i class="fa fa-check-circle"></i>Empower, Support, Thrive</li>
+          </ul>
+
+          <a
+            href="tel:+61 468 321 024"
+            class="cascade-d-btn-referral cascade-d-btn-filled"
+            >+61 468 321 024</a
+          >
+        </div>
+
+        <div class="cascade-d-about-right">
+          <img
+            src="./assets/about.png"
+            alt="About Intracare Services"
+            class="cascade-d-about-img"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="cascade-d-testimonial-section">
+      <div class="cascade-wrapper cascade-d-text-center">
+        <p class="cascade-d-subheading">Gallery</p>
+        <h2 class="cascade-d-heading">Our Happy Clients</h2>
+      </div>
+
+      <div class="">
+        <!-- Swiper -->
+        <div class="swiper cascade-d-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/1.png" alt="Client 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/2.png" alt="Client 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/3.png" alt="Client 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/4.png" alt="Client 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/1.png" alt="Client 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/2.png" alt="Client 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/3.png" alt="Client 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/4.png" alt="Client 4" />
+            </div>
+            <!-- Add more images as needed -->
+          </div>
+
+          <!-- Navigation -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cascade-d-customer-say-section">
+      <div class="cascade-wrapper cascade-d-text-center">
+        <div class="cascade-d-stars">★★★★★</div>
+        <h2 class="cascade-d-heading">What Our Customers Say</h2>
+      </div>
+
+      <div class="cascade-wrapper">
+        <div class="swiper cascade-d-testimonial-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide cascade-d-testimonial-card">
+              <p class="cascade-d-testimonial-text">
+                “The team at Intracare Services were incredibly helpful and
+                professional. They made the entire process simple and
+                comfortable.”
+              </p>
+              <p class="cascade-d-reviewer-name">– Sarah M.</p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide cascade-d-testimonial-card">
+              <p class="cascade-d-testimonial-text">
+                “Exceptional care and support! I highly recommend them to anyone
+                looking for reliable and compassionate service.”
+              </p>
+              <p class="cascade-d-reviewer-name">– James R.</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide cascade-d-testimonial-card">
+              <p class="cascade-d-testimonial-text">
+                “Professional, caring, and always available when we need them.
+                Truly thankful for their services.”
+              </p>
+              <p class="cascade-d-reviewer-name">– Angela C.</p>
+            </div>
+            <div class="swiper-slide cascade-d-testimonial-card">
+              <p class="cascade-d-testimonial-text">
+                “Professional, caring, and always available when we need them.
+                Truly thankful for their services.”
+              </p>
+              <p class="cascade-d-reviewer-name">– Angela C.</p>
+            </div>
+            <div class="swiper-slide cascade-d-testimonial-card">
+              <p class="cascade-d-testimonial-text">
+                “Professional, caring, and always available when we need them.
+                Truly thankful for their services.”
+              </p>
+              <p class="cascade-d-reviewer-name">– Angela C.</p>
+            </div>
+          </div>
+          <!-- Optional Swiper Navigation -->
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="cascade-d-contact-section">
+      <div class="cascade-wrapper cascade-d-contact-wrapper">
+        <!-- Left side image -->
+        <div class="cascade-d-contact-left">
+          <img
+            src="./assets/google-map.png"
+            alt="Contact Us"
+            class="cascade-d-contact-img"
+          />
+        </div>
+
+        <!-- Right side form -->
+        <div class="cascade-d-contact-right">
+          <form class="cascade-d-contact-form-alt">
+            <h3 class="cascade-d-form-heading">Make A Referral</h3>
+
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-name">Name</label>
+              <input
+                placeholder="Enter your full name"
+                type="text"
+                id="cascade-d-name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-email">Email Address</label>
+              <input
+                placeholder="name@example.com"
+                type="email"
+                id="cascade-d-email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-phone">Phone</label>
+              <input
+                placeholder="Enter your phone number"
+                type="tel"
+                id="cascade-d-phone"
+                name="phone"
+                required
+              />
+            </div>
+
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-suburb">Suburb</label>
+              <input
+                placeholder="Enter your suburb or area"
+                type="text"
+                id="cascade-d-suburb"
+                name="suburb"
+                required
+              />
+            </div>
+
+            <div class="cascade-d-form-group">
+              <label for="cascade-d-message">Message</label>
+              <textarea
+                id="cascade-d-message"
+                name="message"
+                placeholder="Type your message or specific request here"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="cascade-d-submit-btn cascade-d-btn-filled"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="cascade-d-faq-section">
+      <div class="cascade-wrapper cascade-d-text-center">
+        <p class="cascade-d-subheading">FAQ</p>
+        <h2 class="cascade-d-heading">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="cascade-wrapper cascade-d-accordion">
+        <div class="cascade-d-accordion-item">
+          <button class="cascade-d-accordion-header">
+            What types of occupational therapy supports does the NDIS fund?
+            <span class="cascade-d-accordion-icon"
+              ><i class="fa fa-angle-right"></i
+            ></span>
+          </button>
+          <div class="cascade-d-accordion-body">
+            <p>
+              The NDIS funds occupational therapy (OT) supports that are deemed
+              reasonable and necessary, directly related to a participant's
+              disability. These supports can include assistance with daily
+              living activities, development of fine motor skills, and
+              recommendations for assistive technology or home modifications.
+              The specific supports funded depend on individual goals and
+              assessed needs.
+            </p>
+          </div>
+        </div>
+        <div class="cascade-d-accordion-item">
+          <button class="cascade-d-accordion-header">
+            What types of occupational therapy supports does the NDIS fund?
+            <span class="cascade-d-accordion-icon"
+              ><i class="fa fa-angle-right"></i
+            ></span>
+          </button>
+          <div class="cascade-d-accordion-body">
+            <p>
+              The NDIS funds occupational therapy (OT) supports that are deemed
+              reasonable and necessary, directly related to a participant's
+              disability. These supports can include assistance with daily
+              living activities, development of fine motor skills, and
+              recommendations for assistive technology or home modifications.
+              The specific supports funded depend on individual goals and
+              assessed needs.
+            </p>
+          </div>
+        </div>
+        <div class="cascade-d-accordion-item">
+          <button class="cascade-d-accordion-header">
+            What types of occupational therapy supports does the NDIS fund?
+            <span class="cascade-d-accordion-icon"
+              ><i class="fa fa-angle-right"></i
+            ></span>
+          </button>
+          <div class="cascade-d-accordion-body">
+            <p>
+              The NDIS funds occupational therapy (OT) supports that are deemed
+              reasonable and necessary, directly related to a participant's
+              disability. These supports can include assistance with daily
+              living activities, development of fine motor skills, and
+              recommendations for assistive technology or home modifications.
+              The specific supports funded depend on individual goals and
+              assessed needs.
+            </p>
+          </div>
+        </div>
+        <div class="cascade-d-accordion-item">
+          <button class="cascade-d-accordion-header">
+            What types of occupational therapy supports does the NDIS fund?
+            <span class="cascade-d-accordion-icon"
+              ><i class="fa fa-angle-right"></i
+            ></span>
+          </button>
+          <div class="cascade-d-accordion-body">
+            <p>
+              The NDIS funds occupational therapy (OT) supports that are deemed
+              reasonable and necessary, directly related to a participant's
+              disability. These supports can include assistance with daily
+              living activities, development of fine motor skills, and
+              recommendations for assistive technology or home modifications.
+              The specific supports funded depend on individual goals and
+              assessed needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="cascade-d-footer">
+      <div class="cascade-wrapper cascade-d-footer-top">
+        <!-- Column 1 -->
+        <div class="cascade-d-footer-col">
+          <img
+            src="./assets/logo.png"
+            alt="Intracare Logo"
+            class="cascade-d-footer-logo"
+          />
+          <p class="cascade-d-footer-desc">
+            Intracare Services provides specialised support and occupational
+            therapy to help individuals lead more independent and empowered
+            lives.
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="cascade-d-footer-col">
+          <img
+            src="./assets/phone-icon.png"
+            alt="Phone Icon"
+            class="cascade-d-footer-icon"
+          />
+          <a href="tel:+61 468 321 024 " class="cascade-d-footer-link"
+            >+61 468 321 024 </a
+          >
+        </div>
+
+        <!-- Column 3 -->
+        <div class="cascade-d-footer-col">
+          <img
+            src="./assets/email-icon.png"
+            alt="Email Icon"
+            class="cascade-d-footer-icon"
+          />
+          <a
+            href="mailto:admin@intracareservices.com.au"
+            class="cascade-d-footer-link"
+            >admin@intracareservices.com.au</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="cascade-d-footer-bottom">
+      <div class="cascade-wrapper">
+        <div class="cascade-d-footer-container">
+          <p class="cascade-d-footer-left">
+            Copyright © 2025 Intracare Services
+          </p>
+          <p class="cascade-d-footer-right">
+            Website designed by Cascade Digital
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
