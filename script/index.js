@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     loop: true,
-
     slidesPerView: 1,
     pagination: {
       el: ".swiper-pagination",
@@ -23,18 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".cascade-d-testimonial-swiper", {
+  const swiper = new Swiper(".cascade-d-testimonial-swiper", {
     loop: true,
-    spaceBetween: 20,
-    slidesPerView: 1,
+    slidesPerView: 3,
+    spaceBetween: 20, // Optional: adds spacing between slides
+    speed: 5000, // Control how fast the slides move (higher = slower)
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      waitForTransition: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-
     breakpoints: {
-      768: {
-        slidesPerView: 2,
+      360: {
+        slidesPerView: 1,
       },
       1024: {
         slidesPerView: 3,
@@ -42,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".cascade-d-accordion-header");
 
@@ -56,5 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       item.classList.toggle("active");
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".cascade-d-nav-toggle");
+  const navMenu = document.querySelector(".cascade-d-nav-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
   });
 });

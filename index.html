@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Find Your Path to Independence - Disability Services Cockburn Central
-    </title>
+    <title>Welcome to Arcanum Group</title>
     <link rel="stylesheet" href="./style/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,17 +24,18 @@
       referrerpolicy="no-referrer"
     />
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
       integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="./script/index.js" defer></script>
   </head>
   <body>
@@ -44,8 +43,19 @@
       <div class="cascade-wrapper">
         <div class="cascade-d-navigation">
           <div class="cascade-d-logo">
-            <img src="./assets/logo.png" alt="PathWay Services Logo" />
+            <a href="/">
+              <img src="./assets/logo.png" alt="PathWay Services Logo" />
+            </a>
           </div>
+
+          <!-- Hamburger Toggle -->
+          <button class="cascade-d-nav-toggle" aria-label="Toggle Menu">
+            <span class="cascade-d-bar"></span>
+            <span class="cascade-d-bar"></span>
+            <span class="cascade-d-bar"></span>
+          </button>
+
+          <!-- Navigation Menu -->
           <ul class="cascade-d-nav-menu">
             <li><a href="#about">About</a></li>
             <li><a href="#why-choose-us">Why Choose Us</a></li>
@@ -63,11 +73,13 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
+
           <a
             href="#referral"
             class="cascade-d-btn-referral cascade-d-btn-filled"
-            >Make a Referral</a
           >
+            Contact Us
+          </a>
         </div>
       </div>
     </nav>
@@ -87,7 +99,8 @@
               href="tel:+61468321024"
               class="cascade-d-phone-btn cascade-d-btn-filled"
             >
-              <i class="fas fa-phone-alt"></i> +61 468 321 024
+              <i class="fa fa-phone"></i>
+              +61 468 321 024
             </a>
             <img
               src="./assets//google-icon.png"
@@ -98,7 +111,7 @@
         </div>
         <div class="cascade-d-banner-right">
           <form class="cascade-d-contact-form">
-            <h3>Make a Referral</h3>
+            <h3>Contact Us</h3>
             <div class="cascade-d-form-group">
               <label for="cascade-d-name">Name</label>
               <input
@@ -163,24 +176,24 @@
       <div class="cascade-wrapper">
         <div class="cascade-d-text-center">
           <p class="cascade-d-subheading">NDIS</p>
-          <h2 class="cascade-d-heading">Services we Provide</h2>
+          <h2 class="cascade-d-heading">Services We Provide</h2>
           <p class="cascade-d-paragraph">
             A strong focus on positive outcomes is at the forefront of our
             approach. We offer at-home or in-clinic options for our services.
           </p>
         </div>
 
-        <div class="cascade-d-cards-grid">
+        <div class="cascade-d-cards-grid-services">
           <!-- Repeatable Service Cards -->
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="./assets/services1.png"
-              alt="Service 1"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="Community Access"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">Community Access</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">Community Access</h3>
+              <p class="cascade-d-card-services-desc">
                 We help clients engage with the community through guided support
                 and social activities.
               </p>
@@ -188,15 +201,17 @@
             </div>
           </div>
 
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="./assets/services2.png"
-              alt="Service 2"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="Daily Living Support"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">Daily Living Support</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">
+                Daily Living Support
+              </h3>
+              <p class="cascade-d-card-services-desc">
                 Assisting with daily tasks to promote independence in everyday
                 life.
               </p>
@@ -204,15 +219,15 @@
             </div>
           </div>
 
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="./assets/services3.png"
-              alt="Service 3"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="Transport Services"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">Transport Services</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">Transport Services</h3>
+              <p class="cascade-d-card-services-desc">
                 Reliable and safe transport for appointments, errands, and
                 events.
               </p>
@@ -220,15 +235,15 @@
             </div>
           </div>
 
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="../assets/services4.png"
-              alt="Service 4"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="Personal Care"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">Personal Care</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">Personal Care</h3>
+              <p class="cascade-d-card-services-desc">
                 Dignified support with hygiene, grooming, and other personal
                 needs.
               </p>
@@ -236,15 +251,15 @@
             </div>
           </div>
 
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="./assets/services5.png"
-              alt="Service 5"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="Respite Care"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">Respite Care</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">Respite Care</h3>
+              <p class="cascade-d-card-services-desc">
                 Temporary relief for primary carers through trusted short-term
                 care.
               </p>
@@ -252,15 +267,15 @@
             </div>
           </div>
 
-          <div class="cascade-d-card">
+          <div class="cascade-d-card-services">
             <img
-              src="./assets/services6.png"
-              alt="Service 6"
-              class="cascade-d-card-img"
+              src="./assets/logo-service-icon.png"
+              alt="In-Home Support"
+              class="cascade-d-card-services-img"
             />
-            <div class="cascade-d-card-body">
-              <h3 class="cascade-d-card-title">In-Home Support</h3>
-              <p class="cascade-d-card-desc">
+            <div class="cascade-d-card-services-body">
+              <h3 class="cascade-d-card-services-title">In-Home Support</h3>
+              <p class="cascade-d-card-services-desc">
                 Flexible assistance delivered in the comfort of your own home.
               </p>
               <button class="cascade-d-learn-btn">Learn More</button>
@@ -269,7 +284,7 @@
         </div>
 
         <div class="cascade-d-bottom-cta">
-          <button class="cascade-d-referral-btn">Make a Referral</button>
+          <button class="cascade-d-btn-ghost">Contact Us</button>
           <p class="cascade-d-call-text">
             or call <a href="tel:+61468321024">+61 468 321 024</a>
           </p>
@@ -291,7 +306,7 @@
             style="background-image: url('./assets/why1.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">Compassionate Care</h3>
+              <h3 class="cascade-d-card-wcu-title">Compassionate Care</h3>
               <p class="cascade-d-card-desc">
                 Our team is dedicated to providing genuine support with kindness
                 and empathy.
@@ -304,7 +319,7 @@
             style="background-image: url('./assets/why2.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">Tailored Services</h3>
+              <h3 class="cascade-d-card-wcu-title">Tailored Services</h3>
               <p class="cascade-d-card-desc">
                 We personalise every service to match your unique needs and
                 preferences.
@@ -317,7 +332,7 @@
             style="background-image: url('./assets/why3.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">Qualified Staff</h3>
+              <h3 class="cascade-d-card-wcu-title">Qualified Staff</h3>
               <p class="cascade-d-card-desc">
                 Our trained professionals ensure high standards of support and
                 safety.
@@ -330,7 +345,7 @@
             style="background-image: url('./assets/why4.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">24/7 Availability</h3>
+              <h3 class="cascade-d-card-wcu-title">24/7 Availability</h3>
               <p class="cascade-d-card-desc">
                 We're always here when you need us, day or night.
               </p>
@@ -342,7 +357,7 @@
             style="background-image: url('./assets/why5.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">Community Focus</h3>
+              <h3 class="cascade-d-card-wcu-title">Community Focus</h3>
               <p class="cascade-d-card-desc">
                 Helping clients connect and thrive within their community is at
                 our core.
@@ -355,7 +370,7 @@
             style="background-image: url('./assets/why6.png')"
           >
             <div class="cascade-d-why-card-overlay">
-              <h3 class="cascade-d-card-title">NDIS Expertise</h3>
+              <h3 class="cascade-d-card-wcu-title">NDIS Expertise</h3>
               <p class="cascade-d-card-desc">
                 We understand NDIS inside and out—so you don’t have to worry.
               </p>
@@ -363,12 +378,10 @@
           </div>
         </div>
 
-        <div class="cascade-d-bottom-cta">
-          <button class="cascade-d-referral-btn">Make a Referral</button>
+        <div class="cascade-d-wcu">
+          <button class="cascade-d-btn-ghost">Contact Us</button>
           <br />
-          <a
-            href="tel:+61468321024"
-            class="cascade-d-gradient-btn cascade-d-btn-filled"
+          <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
             >+61 468 321 024</a
           >
         </div>
@@ -411,16 +424,18 @@
             <li><i class="fa fa-check-circle"></i>Empower, Support, Thrive</li>
           </ul>
 
-          <a
-            href="tel:+61 468 321 024"
-            class="cascade-d-btn-referral cascade-d-btn-filled"
-            >+61 468 321 024</a
-          >
+          <div class="cascade-d-btn-about-us">
+            <button class="cascade-d-btn-ghost">Contact Us</button>
+            <br />
+            <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
+              >+61 468 321 024</a
+            >
+          </div>
         </div>
 
         <div class="cascade-d-about-right">
           <img
-            src="./assets/about.png"
+            src="./assets/about2.jpg"
             alt="About Intracare Services"
             class="cascade-d-about-img"
           />
@@ -468,12 +483,25 @@
 
           <div class="swiper-pagination"></div>
         </div>
+        <div class="cascade-d-bottom-cta">
+          <button class="cascade-d-btn-ghost">Contact Us</button>
+          <p class="cascade-d-call-text">
+            or call <a href="tel:+61468321024">+61 468 321 024</a>
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="cascade-d-customer-say-section">
       <div class="cascade-wrapper cascade-d-text-center">
-        <div class="cascade-d-stars">★★★★★</div>
+        <div class="cascade-d-stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+
         <h2 class="cascade-d-heading">What Our Customers Say</h2>
       </div>
 
@@ -488,6 +516,7 @@
                 comfortable.”
               </p>
               <p class="cascade-d-reviewer-name">– Sarah M.</p>
+              <div class="cascade-d-services-triangle"></div>
             </div>
 
             <!-- Slide 2 -->
@@ -497,6 +526,7 @@
                 looking for reliable and compassionate service.”
               </p>
               <p class="cascade-d-reviewer-name">– James R.</p>
+              <div class="cascade-d-services-triangle"></div>
             </div>
 
             <!-- Slide 3 -->
@@ -506,6 +536,7 @@
                 Truly thankful for their services.”
               </p>
               <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <div class="cascade-d-services-triangle"></div>
             </div>
             <div class="swiper-slide cascade-d-testimonial-card">
               <p class="cascade-d-testimonial-text">
@@ -513,6 +544,7 @@
                 Truly thankful for their services.”
               </p>
               <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <div class="cascade-d-services-triangle"></div>
             </div>
             <div class="swiper-slide cascade-d-testimonial-card">
               <p class="cascade-d-testimonial-text">
@@ -520,6 +552,7 @@
                 Truly thankful for their services.”
               </p>
               <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <div class="cascade-d-services-triangle"></div>
             </div>
           </div>
           <!-- Optional Swiper Navigation -->
@@ -527,16 +560,51 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      <div class="cascade-d-clients-container">
+        <button class="cascade-d-btn-ghost">Contact Us</button>
+        <br />
+        <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
+          >+61 468 321 024</a
+        >
+      </div>
     </section>
     <section class="cascade-d-contact-section">
       <div class="cascade-wrapper cascade-d-contact-wrapper">
         <!-- Left side image -->
         <div class="cascade-d-contact-left">
-          <img
-            src="./assets/google-map.png"
-            alt="Contact Us"
-            class="cascade-d-contact-img"
-          />
+          <div
+            style="
+              overflow: hidden;
+              resize: none;
+              max-width: 100%;
+              width: 100%;
+              height: 500px;
+            "
+          >
+            <div
+              id="google-maps-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=Arcanum+Group+Inc,+Inverness+Drive+East,+Englewood,+CO,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
+            <a
+              class="embed-ded-maphtml"
+              rel="nofollow"
+              href="https://www.bootstrapskins.com/themes"
+              id="make-map-data"
+              >premium bootstrap themes</a
+            ><style>
+              #google-maps-canvas img {
+                max-height: none;
+                max-width: none !important;
+                background: none !important;
+              }
+            </style>
+          </div>
         </div>
 
         <!-- Right side form -->
@@ -602,7 +670,7 @@
               type="submit"
               class="cascade-d-submit-btn cascade-d-btn-filled"
             >
-              Send Message
+              Send
             </button>
           </form>
         </div>
@@ -691,6 +759,12 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="cascade-d-bottom-cta">
+        <button class="cascade-d-btn-ghost">Contact Us</button>
+        <p class="cascade-d-call-text">
+          or call <a href="tel:+61468321024">+61 468 321 024</a>
+        </p>
       </div>
     </section>
     <footer class="cascade-d-footer">

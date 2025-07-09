@@ -1,10 +1,10 @@
 /* Cascade Styles - Cleaned and Optimized */
 :root {
   --cascade-white: #ffffff;
-  --cascade-green: #138331;
-  --cascade-light-green: #a5b632;
-  --cascade-accent-green: #32a852;
-  --cascade-dark: #222;
+  --cascade-brown: #c47a60;
+  --cascade-light-brown: #e8b297;
+  --cascade-accent-brown: #c47a60;
+  --cascade-dark: #252525;
   --cascade-body: #333;
   --cascade-muted: #555;
   --cascade-muted-light: #666;
@@ -35,6 +35,7 @@ body {
 a {
   display: inline-block;
   text-decoration: none !important;
+  cursor: pointer;
 }
 
 img {
@@ -43,24 +44,52 @@ img {
 }
 
 button {
+  font-family: "League Spartan", sans-serif;
   cursor: pointer;
   border: none;
   font-weight: bold;
   display: inline-block;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .cascade-d-btn-filled {
+  font-weight: 700;
+  text-transform: uppercase;
   background: linear-gradient(
     to right,
-    var(--cascade-light-green),
-    var(--cascade-green)
+    var(--cascade-light-brown),
+    var(--cascade-brown)
   );
   color: white;
   border-radius: 25px;
   padding: 12px 25px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.cascade-d-btn-ghost {
+  background-color: #fff;
+  border: 2px solid var(--cascade-brown);
+  color: var(--cascade-brown);
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s ease-in;
+}
+.cascade-d-btn-ghost:hover {
+  background: linear-gradient(
+    to right,
+    var(--cascade-light-brown),
+    var(--cascade-brown)
+  );
+  color: #fff;
+  border: none;
 }
 .cascade-wrapper {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -76,11 +105,15 @@ button {
 }
 
 .cascade-d-logo {
-  font-size: 24px;
-  color: var(--cascade-green);
+  color: var(--cascade-brown);
   font-weight: bold;
+  font-size: 0;
 }
 
+.cascade-d-logo img {
+  width: auto;
+  height: 80px;
+}
 .cascade-d-nav-menu {
   display: flex;
   list-style: none;
@@ -90,13 +123,13 @@ button {
 
 .cascade-d-nav-menu a {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
   color: black;
   transition: color 0.3s ease;
 }
 
 .cascade-d-nav-menu a:hover {
-  color: var(--cascade-green);
+  color: var(--cascade-brown);
 }
 
 .cascade-d-dropdown {
@@ -137,18 +170,36 @@ button {
   font-size: 16px;
 }
 
-.cascade-d-btn-referral:hover,
-.cascade-d-phone-btn:hover,
-.cascade-d-submit-btn:hover {
+.cascade-d-btn-filled:hover,
+.cascade-d-btn-ghost:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--cascade-btn-shadow);
+}
+/* Hamburger Button */
+.cascade-d-nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cascade-d-bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
 }
 
 /* Banner */
 .cascade-d-banner {
   min-height: 100vh;
-  background: url("../assets/background-image.png") no-repeat center
-    center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/banner.jpg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   padding: 0 5%;
@@ -159,6 +210,7 @@ button {
   width: 100%;
   gap: 230px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cascade-d-banner-left {
@@ -169,7 +221,7 @@ button {
 .cascade-d-banner-left h1 {
   font-size: 60px;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .cascade-d-banner-left p {
@@ -203,6 +255,7 @@ button {
 
 .cascade-d-form-group label {
   display: block;
+  text-align: left;
   margin-bottom: 5px;
   color: var(--cascade-white);
   font-weight: 500;
@@ -221,7 +274,7 @@ button {
 .cascade-d-form-group input:focus,
 .cascade-d-form-group textarea:focus {
   outline: none;
-  border-color: var(--cascade-green);
+  border-color: var(--cascade-brown);
 }
 
 .cascade-d-form-group textarea {
@@ -246,35 +299,33 @@ button {
 }
 
 .cascade-d-subheading {
-  font-size: 16px;
-  color: var(--cascade-accent-green);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--cascade-accent-brown);
+  font-weight: 800;
 }
-
 .cascade-d-heading {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
   color: var(--cascade-dark);
 }
 
 .cascade-d-paragraph {
   font-size: 16px;
   color: var(--cascade-muted);
-  max-width: 700px;
   margin: 0 auto;
 }
-
-.cascade-d-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+.cascade-d-cards-grid-services {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 40px;
+  justify-content: space-between;
 }
-
-.cascade-d-card {
+.cascade-d-card-services {
+  flex: 0 1 calc(33.333% - 20px); /* 3 columns with spacing considered */
+  box-sizing: border-box;
+}
+.cascade-d-card-services {
   padding: 20px 20px 60px 20px;
   background: var(--cascade-white);
   border-radius: 20px;
@@ -283,51 +334,78 @@ button {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 4px 8px var(--cascade-card-shadow);
-  border: 2px solid var(--cascade-green);
+  border: 2px solid var(--cascade-brown);
   position: relative;
 }
-.cascade-d-card-img {
+.cascade-d-card-services-img {
   width: 50px;
-  height: auto;
-  object-fit: cover;
+  height: 50px;
+  text-align: left;
+  object-fit: contain;
 }
-
-.cascade-d-card-title {
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--cascade-brown);
+}
+span.swiper-pagination-bullet {
+  background: #8bc29a;
+}
+.cascade-d-card-services-title {
   font-size: 20px;
-  margin-bottom: 10px;
-  color: var(--cascade-dark);
+  margin-top: 20px;
+  color: var(--cascade-brown);
 }
 
-.cascade-d-card-desc {
+.cascade-d-card-services-desc {
   font-size: 15px;
-  color: var(--cascade-muted-light);
+  color: var(--cascade-dark);
 }
 
 .cascade-d-learn-btn {
   position: absolute;
-  bottom: 20px;
   right: 0;
   bottom: 0;
-  padding: 10px 20px;
-  background-color: var(--cascade-accent-green);
+  text-transform: uppercase;
+  padding: 10px 50px;
+  background-color: var(--cascade-brown);
   color: white;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.cascade-d-learn-btn:hover {
-  background-color: #279746;
+  border-top-left-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .cascade-d-bottom-cta {
   text-align: center;
   margin-top: 60px;
 }
-
+.cascade-d-wcu {
+  text-align: center;
+  display: flex;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.cascade-d-clients-container {
+  text-align: center;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.cascade-d-services-triangle {
+  height: 14px;
+  position: absolute;
+  bottom: 59px;
+  width: 20px;
+  left: 81px;
+  background-color: var(--cascade-brown);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
 .cascade-d-referral-btn {
   background-color: var(--cascade-white);
-  border: 2px solid var(--cascade-accent-green);
-  color: var(--cascade-accent-green);
+  border: 2px solid var(--cascade-accent-brown);
+  color: var(--cascade-accent-brown);
   padding: 12px 30px;
   border-radius: 8px;
   font-size: 16px;
@@ -338,13 +416,15 @@ button {
 }
 
 .cascade-d-call-text {
-  margin-top: 15px;
   font-size: 15px;
-  color: #444;
+  color: var(--cascade-dark);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .cascade-d-call-text a {
-  color: var(--cascade-accent-green);
+  color: var(--cascade-accent-brown);
 }
 
 .cascade-d-call-text a:hover {
@@ -356,7 +436,10 @@ button {
   padding: 80px 20px;
   background-color: #f8f8f8;
 }
-
+.cascade-d-card-wcu-title {
+  text-transform: uppercase;
+  color: var(--cascade-brown);
+}
 .cascade-d-why-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -377,7 +460,7 @@ button {
 
 .cascade-d-why-card-overlay {
   background-color: var(--cascade-white);
-  padding: 20px;
+  padding: 20px 30px;
   z-index: 999;
   border-radius: 12px;
   width: 90%;
@@ -390,30 +473,14 @@ button {
 
 .cascade-d-bottom-cta {
   text-align: center;
-  margin-top: 120px;
-}
-
-.cascade-d-referral-btn {
-  background-color: #fff;
-  border: 2px solid var(--cascade-green);
-  color: var(--cascade-green);
-  padding: 12px 30px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.cascade-d-referral-btn:hover {
-  background-color: var(--cascade-bg-hover);
+  margin-top: 50px;
 }
 
 .cascade-d-gradient-btn {
   background: linear-gradient(
     to right,
-    var(--cascade-light-green),
-    var(--cascade-green)
+    var(--cascade-light-brown),
+    var(--cascade-brown)
   );
   color: white;
   padding: 12px 30px;
@@ -431,7 +498,13 @@ button {
 }
 
 /* about us  */
-
+.cascade-d-btn-about-us {
+  display: flex;
+  gap: 10px;
+}
+.cascade-d-about-section {
+  padding: 80px 0px;
+}
 .cascade-d-about-left-btn-container {
   display: flex;
   align-items: center;
@@ -481,7 +554,7 @@ button {
   align-items: center;
 }
 .cascade-d-about-list li i {
-  color: var(--cascade-green);
+  color: var(--cascade-brown);
   font-size: 21px;
 }
 .cascade-d-about-right {
@@ -497,7 +570,7 @@ button {
 }
 .cascade-d-about-img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 12px;
 }
 /* testimonial */
@@ -514,19 +587,18 @@ button {
 
 .swiper-slide img {
   width: 100%;
-  height: 500px;
-
+  height: 360px;
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /* Optional: Adjust Swiper navigation */
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--cascade-green);
+  color: var(--cascade-brown);
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--cascade-green);
+  background-color: var(--cascade-brown);
 }
 
 /* google review */
@@ -536,21 +608,20 @@ button {
 }
 
 .cascade-d-stars {
-  font-size: 24px;
-  color: gold;
+  font-size: 30px;
   margin-bottom: 10px;
   letter-spacing: 4px;
 }
-
+.cascade-d-stars i {
+  color: #f2ae03;
+}
 .cascade-d-testimonial-swiper {
   margin-top: 40px;
 }
 
 .cascade-d-testimonial-card {
-  background-color: #f9f9f9;
   padding: 30px 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -563,8 +634,13 @@ button {
   margin-bottom: 20px;
   font-style: italic;
   line-height: 1.6;
+  border: 3px solid var(--cascade-brown);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
 }
-
 .cascade-d-reviewer-name {
   font-weight: bold;
   color: var(--cascade-dark);
@@ -572,6 +648,13 @@ button {
   font-size: 14px;
 }
 
+.cascade-d-testimonial-swiper
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--cascade-brown);
+}
+.cascade-d-testimonial-swiper span.swiper-pagination-bullet {
+  background: #8bc29a;
+}
 /* contactr section */
 .cascade-d-contact-section {
   padding: 80px 20px;
@@ -634,7 +717,7 @@ button {
 }
 
 .cascade-d-accordion {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 40px auto 0;
 }
 
@@ -663,7 +746,9 @@ button {
   font-size: 18px;
   transition: transform 0.3s ease;
 }
-
+.cascade-d-accordion-icon i {
+  color: var(--cascade-brown);
+}
 .cascade-d-accordion-body {
   max-height: 0;
   overflow: hidden;
@@ -724,7 +809,7 @@ button {
 .cascade-d-footer-link {
   display: inline-block;
   margin-top: 10px;
-  color: #138331;
+  color: var(--cascade-brown);
   text-decoration: none;
   font-weight: 500;
 }
@@ -737,11 +822,11 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 1px solid var(--cascade-green);
-  padding-top: 20px;
+  border-top: 1px solid var(--cascade-brown);
   font-size: 13px;
   color: #fff;
   background: #30343d;
+  padding: 10px 0px;
 }
 
 .cascade-d-footer-left,
@@ -751,4 +836,125 @@ button {
 .cascade-d-footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 1160px; */
+}
+
+/* responsive */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .cascade-d-nav-toggle {
+    display: flex;
+  }
+  .cascade-d-cards-grid-services .cascade-d-card-services {
+    flex: 1 1 calc(50% - 15px); /* 2 columns */
+    max-width: calc(50% - 15px);
+  }
+  .cascade-d-nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 70px; /* Adjust depending on header height */
+    left: 0;
+    width: 100%;
+    background: var(--cascade-white);
+    z-index: 99;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px var(--cascade-hover-shadow);
+  }
+
+  .cascade-d-nav-menu.active {
+    display: flex;
+    position: absolute;
+    top: 90px;
+  }
+  .cascade-d-nav-menu li {
+    padding: 10px 20px;
+  }
+
+  .cascade-d-btn-referral {
+    display: none; /* Hide CTA on small screens or move inside menu if needed */
+  }
+}
+/* Mobile & Tablet Responsive Styles */
+@media (max-width: 1024px) {
+  .cascade-d-logo img {
+    height: 70px;
+  }
+  .cascade-d-why-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns at 1024px and above */
+  }
+  .cascade-d-banner-content {
+    flex-direction: column;
+    gap: 50px; /* Reduce gap for smaller screens */
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .cascade-d-submit-btn.cascade-d-btn-filled {
+    width: 100%;
+  }
+  .cascade-d-banner-left h1 {
+    font-size: 42px;
+  }
+
+  .cascade-d-banner-left p {
+    font-size: 16px;
+  }
+
+  .cascade-d-about-left-btn-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cascade-d-phone-btn {
+    justify-content: center;
+  }
+
+  .cascade-d-banner-right {
+    width: 100%;
+  }
+
+  .cascade-d-contact-form {
+    width: 100%;
+  }
+
+  .cascade-d-form-group input,
+  .cascade-d-form-group textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cascade-d-banner-left h1 {
+    font-size: 32px;
+  }
+  .cascade-d-why-card {
+    height: 300px;
+  }
+  .cascade-d-why-cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .cascade-d-banner-left p {
+    font-size: 14px;
+  }
+
+  .cascade-d-banner {
+    padding: 40px 15px;
+    background-position: top center;
+  }
+  .cascade-d-cards-grid-services .cascade-d-card-services {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .cascade-d-banner-content {
+    gap: 30px;
+  }
+
+  .cascade-d-contact-form {
+    padding: 20px;
+  }
 }
