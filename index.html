@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="./assets/logo-service-icon.png" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -41,7 +43,7 @@
   <body>
     <nav class="cascade-d-nav-container">
       <div class="cascade-wrapper">
-        <div class="cascade-d-navigation">
+        <div class="cascade-d-navigation cascade-flex">
           <div class="cascade-d-logo">
             <a href="/">
               <img src="./assets/logo.png" alt="PathWay Services Logo" />
@@ -56,7 +58,7 @@
           </button>
 
           <!-- Navigation Menu -->
-          <ul class="cascade-d-nav-menu">
+          <ul class="cascade-d-nav-menu cascade-flex">
             <li><a href="#about">About</a></li>
             <li><a href="#why-choose-us">Why Choose Us</a></li>
             <li class="cascade-d-dropdown">
@@ -75,8 +77,8 @@
           </ul>
 
           <a
-            href="#referral"
-            class="cascade-d-btn-referral cascade-d-btn-filled"
+            href="#contact-us"
+            class="cascade-d-btn-referral cascade-d-btn-filled cascade-d-btn"
           >
             Contact Us
           </a>
@@ -84,8 +86,8 @@
       </div>
     </nav>
 
-    <section class="cascade-d-banner">
-      <div class="cascade-d-banner-content cascade-wrapper">
+    <section class="cascade-d-banner cascade-flex">
+      <div class="cascade-d-banner-content cascade-flex cascade-wrapper">
         <div class="cascade-d-banner-left">
           <h1>Find Your Path <br />to Independence</h1>
           <p>
@@ -97,7 +99,7 @@
           <div class="cascade-d-about-left-btn-container">
             <a
               href="tel:+61468321024"
-              class="cascade-d-phone-btn cascade-d-btn-filled"
+              class="cascade-d-phone-btn cascade-d-btn-filled cascade-d-btn"
             >
               <i class="fa fa-phone"></i>
               +61 468 321 024
@@ -163,7 +165,7 @@
             </div>
             <button
               type="submit"
-              class="cascade-d-submit-btn cascade-d-btn-filled"
+              class="cascade-d-submit-btn cascade-d-btn-filled cascade-d-btn"
             >
               Send
             </button>
@@ -185,7 +187,7 @@
 
         <div class="cascade-d-cards-grid-services">
           <!-- Repeatable Service Cards -->
-          <div class="cascade-d-card-services">
+          <div class="cascade-d-card-services cascade-flex">
             <img
               src="./assets/logo-service-icon.png"
               alt="Community Access"
@@ -197,7 +199,7 @@
                 We help clients engage with the community through guided support
                 and social activities.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
 
@@ -215,7 +217,7 @@
                 Assisting with daily tasks to promote independence in everyday
                 life.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
 
@@ -231,7 +233,7 @@
                 Reliable and safe transport for appointments, errands, and
                 events.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
 
@@ -247,7 +249,7 @@
                 Dignified support with hygiene, grooming, and other personal
                 needs.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
 
@@ -263,7 +265,7 @@
                 Temporary relief for primary carers through trusted short-term
                 care.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
 
@@ -278,13 +280,13 @@
               <p class="cascade-d-card-services-desc">
                 Flexible assistance delivered in the comfort of your own home.
               </p>
-              <button class="cascade-d-learn-btn">Learn More</button>
+              <a class="cascade-d-learn-btn">Learn More</a>
             </div>
           </div>
         </div>
 
         <div class="cascade-d-bottom-cta">
-          <button class="cascade-d-btn-ghost">Contact Us</button>
+          <a class="cascade-d-btn cascade-d-btn-ghost">Contact Us</a>
           <p class="cascade-d-call-text">
             or call <a href="tel:+61468321024">+61 468 321 024</a>
           </p>
@@ -292,7 +294,7 @@
       </div>
     </section>
 
-    <section class="cascade-d-why-choose-section">
+    <section class="cascade-d-why-choose-section" id="why-choose-us">
       <div class="cascade-wrapper">
         <div class="cascade-d-text-center">
           <p class="cascade-d-subheading">Excellence</p>
@@ -302,7 +304,7 @@
         <div class="cascade-d-why-cards-grid">
           <!-- Repeat for 6 cards -->
           <div
-            class="cascade-d-why-card"
+            class="cascade-d-why-card cascade-flex"
             style="background-image: url('./assets/why1.png')"
           >
             <div class="cascade-d-why-card-overlay">
@@ -379,17 +381,19 @@
         </div>
 
         <div class="cascade-d-wcu">
-          <button class="cascade-d-btn-ghost">Contact Us</button>
+          <a class="cascade-d-btn cascade-d-btn-ghost">Contact Us</a>
           <br />
-          <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
+          <a
+            href="tel:+61 468 321 024"
+            class="cascade-d-btn-filled cascade-d-btn"
             >+61 468 321 024</a
           >
         </div>
       </div>
     </section>
 
-    <section class="cascade-d-about-section">
-      <div class="cascade-wrapper cascade-d-about-wrapper">
+    <section class="cascade-d-about-section" id="about">
+      <div class="cascade-wrapper cascade-d-about-wrapper cascade-flex">
         <div class="cascade-d-about-left">
           <p class="cascade-d-subheading">Who We Are</p>
           <h2 class="cascade-d-heading">About Us</h2>
@@ -425,9 +429,11 @@
           </ul>
 
           <div class="cascade-d-btn-about-us">
-            <button class="cascade-d-btn-ghost">Contact Us</button>
+            <a class="cascade-d-btn cascade-d-btn-ghost">Contact Us</a>
             <br />
-            <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
+            <a
+              href="tel:+61 468 321 024"
+              class="cascade-d-btn-filled cascade-d-btn"
               >+61 468 321 024</a
             >
           </div>
@@ -442,7 +448,7 @@
         </div>
       </div>
     </section>
-    <section class="cascade-d-testimonial-section">
+    <section class="cascade-d-testimonial-section" id="testimonials">
       <div class="cascade-wrapper cascade-d-text-center">
         <p class="cascade-d-subheading">Gallery</p>
         <h2 class="cascade-d-heading">Our Happy Clients</h2>
@@ -450,7 +456,7 @@
 
       <div class="">
         <!-- Swiper -->
-        <div class="swiper cascade-d-swiper">
+        <div class="swiper cascade-d-swiper cascade-d-swiper-clients">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="./assets/1.png" alt="Client 1" />
@@ -478,13 +484,12 @@
             </div>
             <!-- Add more images as needed -->
           </div>
-
-          <!-- Navigation -->
-
           <div class="swiper-pagination"></div>
+          <!-- Navigation -->
         </div>
+
         <div class="cascade-d-bottom-cta">
-          <button class="cascade-d-btn-ghost">Contact Us</button>
+          <button class="cascade-d-btn cascade-d-btn-ghost">Contact Us</button>
           <p class="cascade-d-call-text">
             or call <a href="tel:+61468321024">+61 468 321 024</a>
           </p>
@@ -509,49 +514,49 @@
         <div class="swiper cascade-d-testimonial-swiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide cascade-d-testimonial-card">
-              <p class="cascade-d-testimonial-text">
+            <div class="swiper-slide cascade-d-testimonial-card cascade-flex">
+              <p class="cascade-d-testimonial-text cascade-flex">
                 “The team at Intracare Services were incredibly helpful and
                 professional. They made the entire process simple and
                 comfortable.”
               </p>
-              <p class="cascade-d-reviewer-name">– Sarah M.</p>
+              <p class="cascade-d-reviewer-name">Sarah M.</p>
               <div class="cascade-d-services-triangle"></div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="swiper-slide cascade-d-testimonial-card">
-              <p class="cascade-d-testimonial-text">
+            <div class="swiper-slide cascade-d-testimonial-card cascade-flex">
+              <p class="cascade-d-testimonial-text cascade-flex">
                 “Exceptional care and support! I highly recommend them to anyone
                 looking for reliable and compassionate service.”
               </p>
-              <p class="cascade-d-reviewer-name">– James R.</p>
+              <p class="cascade-d-reviewer-name">James R.</p>
               <div class="cascade-d-services-triangle"></div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="swiper-slide cascade-d-testimonial-card">
-              <p class="cascade-d-testimonial-text">
+            <div class="swiper-slide cascade-d-testimonial-card cascade-flex">
+              <p class="cascade-d-testimonial-text cascade-flex">
                 “Professional, caring, and always available when we need them.
                 Truly thankful for their services.”
               </p>
-              <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <p class="cascade-d-reviewer-name">Angela C.</p>
               <div class="cascade-d-services-triangle"></div>
             </div>
-            <div class="swiper-slide cascade-d-testimonial-card">
-              <p class="cascade-d-testimonial-text">
+            <div class="swiper-slide cascade-d-testimonial-card cascade-flex">
+              <p class="cascade-d-testimonial-text cascade-flex">
                 “Professional, caring, and always available when we need them.
                 Truly thankful for their services.”
               </p>
-              <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <p class="cascade-d-reviewer-name">Angela C.</p>
               <div class="cascade-d-services-triangle"></div>
             </div>
-            <div class="swiper-slide cascade-d-testimonial-card">
-              <p class="cascade-d-testimonial-text">
+            <div class="swiper-slide cascade-d-testimonial-card cascade-flex">
+              <p class="cascade-d-testimonial-text cascade-flex">
                 “Professional, caring, and always available when we need them.
                 Truly thankful for their services.”
               </p>
-              <p class="cascade-d-reviewer-name">– Angela C.</p>
+              <p class="cascade-d-reviewer-name">Angela C.</p>
               <div class="cascade-d-services-triangle"></div>
             </div>
           </div>
@@ -560,16 +565,16 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="cascade-d-clients-container">
-        <button class="cascade-d-btn-ghost">Contact Us</button>
+      <div class="cascade-d-clients-container cascade-flex">
+        <a class="cascade-d-btn cascade-d-btn-ghost">Contact Us</a>
         <br />
-        <a href="tel:+61 468 321 024" class="cascade-d-btn-filled"
+        <a href="tel:+61 468 321 024" class="cascade-d-btn-filled cascade-d-btn"
           >+61 468 321 024</a
         >
       </div>
     </section>
-    <section class="cascade-d-contact-section">
-      <div class="cascade-wrapper cascade-d-contact-wrapper">
+    <section class="cascade-d-contact-section" id="contact-us">
+      <div class="cascade-wrapper cascade-d-contact-wrapper cascade-flex">
         <!-- Left side image -->
         <div class="cascade-d-contact-left">
           <div
@@ -610,7 +615,7 @@
         <!-- Right side form -->
         <div class="cascade-d-contact-right">
           <form class="cascade-d-contact-form-alt">
-            <h3 class="cascade-d-form-heading">Make A Referral</h3>
+            <h3 class="cascade-d-form-heading">Contact Us</h3>
 
             <div class="cascade-d-form-group">
               <label for="cascade-d-name">Name</label>
@@ -668,7 +673,7 @@
 
             <button
               type="submit"
-              class="cascade-d-submit-btn cascade-d-btn-filled"
+              class="cascade-d-submit-btn cascade-d-btn-filled cascade-d-btn"
             >
               Send
             </button>
@@ -676,7 +681,7 @@
         </div>
       </div>
     </section>
-    <section class="cascade-d-faq-section">
+    <section class="cascade-d-faq-section" id="faq">
       <div class="cascade-wrapper cascade-d-text-center">
         <p class="cascade-d-subheading">FAQ</p>
         <h2 class="cascade-d-heading">Frequently Asked Questions</h2>
@@ -761,7 +766,7 @@
         </div>
       </div>
       <div class="cascade-d-bottom-cta">
-        <button class="cascade-d-btn-ghost">Contact Us</button>
+        <button class="cascade-d-btn cascade-d-btn-ghost">Contact Us</button>
         <p class="cascade-d-call-text">
           or call <a href="tel:+61468321024">+61 468 321 024</a>
         </p>
@@ -771,11 +776,12 @@
       <div class="cascade-wrapper cascade-d-footer-top">
         <!-- Column 1 -->
         <div class="cascade-d-footer-col">
-          <img
-            src="./assets/logo.png"
-            alt="Intracare Logo"
-            class="cascade-d-footer-logo"
-          />
+          <a href="#">
+            <img
+              src="./assets/logo.png"
+              alt="Intracare Logo"
+              class="cascade-d-footer-logo"
+          /></a>
           <p class="cascade-d-footer-desc">
             Intracare Services provides specialised support and occupational
             therapy to help individuals lead more independent and empowered
@@ -800,7 +806,7 @@
           <img
             src="./assets/email-icon.png"
             alt="Email Icon"
-            class="cascade-d-footer-icon"
+            class="cascade-d-footer-icon cascade-d-footer-icon-email"
           />
           <a
             href="mailto:admin@intracareservices.com.au"
@@ -813,12 +819,12 @@
     <div class="cascade-d-footer-bottom">
       <div class="cascade-wrapper">
         <div class="cascade-d-footer-container">
-          <p class="cascade-d-footer-left">
+          <div class="cascade-d-footer-left">
             Copyright © 2025 Intracare Services
-          </p>
-          <p class="cascade-d-footer-right">
+          </div>
+          <div class="cascade-d-footer-right">
             Website designed by Cascade Digital
-          </p>
+          </div>
         </div>
       </div>
     </div>
