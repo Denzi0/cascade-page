@@ -297,13 +297,13 @@ img {
 .cascade-d-cards-grid-services {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 5px;
   margin-top: 40px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .cascade-d-card-services {
-  flex: 0 1 calc(24.333% - 20px); /* 3 columns with spacing considered */
+  flex: 0 1 calc(20.5% - 20px); /* 3 columns with spacing considered */
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
@@ -332,6 +332,7 @@ span.swiper-pagination-bullet {
 .cascade-d-card-services-title {
   font-size: 20px;
   margin-top: 20px;
+  line-height: 1.2;
   color: var(--cascade-brown);
 }
 
@@ -343,7 +344,7 @@ span.swiper-pagination-bullet {
 .cascade-d-wcu {
   text-align: center;
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -392,12 +393,18 @@ span.swiper-pagination-bullet {
   color: var(--cascade-brown);
 }
 .cascade-d-why-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px; /* 30px row gap, 40px column gap (adjust as needed) */
-  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
+.cascade-d-why-cards-grid > .cascade-d-why-card-overlay {
+  flex: 0 1 calc(33.5% - 20px);
+}
+.cascade-bottom-text {
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
 .cascade-d-why-card {
   background-size: cover;
   background-position: center;
@@ -419,7 +426,7 @@ span.swiper-pagination-bullet {
 
 .cascade-d-bottom-cta {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /* about us  */
@@ -770,6 +777,7 @@ span.swiper-pagination-bullet {
   .cascade-d-footer-top > .cascade-d-footer-col:first-child {
     align-items: center;
   }
+
   .cascade-d-nav-toggle {
     display: flex;
   }
@@ -834,9 +842,8 @@ span.swiper-pagination-bullet {
   }
 
   /* Services Grid */
-  .cascade-d-cards-grid-services .cascade-d-card-services {
-    flex: 1 1 calc(50% - 15px);
-    max-width: calc(50% - 15px);
+  .cascade-d-why-cards-grid > .cascade-d-why-card-overlay {
+    flex: 0 1 calc(50% - 20px);
   }
 
   /* Why Cards Grid */
@@ -856,7 +863,9 @@ span.swiper-pagination-bullet {
     width: 100%;
     padding: 20px;
   }
-
+  .cascade-d-card-services {
+    flex: 0 1 calc(34.5% - 20px);
+  }
   .cascade-d-form-group input,
   .cascade-d-form-group textarea {
     width: 100%;
@@ -865,6 +874,9 @@ span.swiper-pagination-bullet {
 
 @media (max-width: 600px) {
   /* Typography */
+  .cascade-d-card-services {
+    flex: 100%;
+  }
   .cascade-d-banner-left h1 {
     font-size: 40px;
   }
@@ -890,9 +902,8 @@ span.swiper-pagination-bullet {
   }
 
   /* Services Grid */
-  .cascade-d-cards-grid-services .cascade-d-card-services {
+  .cascade-d-why-cards-grid > .cascade-d-why-card-overlay {
     flex: 100%;
-    max-width: 100%;
   }
 
   /* Banner Content Spacing */
