@@ -301,12 +301,12 @@ img {
   margin-top: 40px;
   justify-content: space-between;
 }
+
 .cascade-d-card-services {
-  flex: 0 1 calc(33.333% - 20px); /* 3 columns with spacing considered */
+  flex: 0 1 calc(24.333% - 20px); /* 3 columns with spacing considered */
   box-sizing: border-box;
-}
-.cascade-d-card-services {
-  padding: 20px 20px 60px 20px;
+  text-align: center;
+  padding: 20px;
   background: var(--cascade-white);
   border-radius: 20px;
   overflow: hidden;
@@ -321,6 +321,7 @@ img {
   height: 50px;
   text-align: left;
   object-fit: contain;
+  margin: 0 auto;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--cascade-brown);
@@ -342,7 +343,7 @@ span.swiper-pagination-bullet {
 .cascade-d-wcu {
   text-align: center;
   display: flex;
-  margin-top: 120px;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -386,13 +387,14 @@ span.swiper-pagination-bullet {
   background-color: #f8f8f8;
 }
 .cascade-d-card-wcu-title {
+  margin: 15px 0px 19px 0px;
   text-transform: uppercase;
   color: var(--cascade-brown);
 }
 .cascade-d-why-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 130px 30px; /* 30px row gap, 40px column gap (adjust as needed) */
+  gap: 30px; /* 30px row gap, 40px column gap (adjust as needed) */
   margin-top: 40px;
 }
 
@@ -411,12 +413,8 @@ span.swiper-pagination-bullet {
   padding: 20px 30px;
   z-index: 999;
   border-radius: 12px;
-  width: 90%;
-  position: absolute;
-  bottom: -80px;
-  right: 20px;
-  left: 20px;
   box-shadow: 0 0px 13px rgb(0 0 0 / 49%);
+  text-align: center;
 }
 
 .cascade-d-bottom-cta {
