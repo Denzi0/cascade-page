@@ -108,17 +108,32 @@
         </div>
         <div class="cascade-d-banner-right">
           <form class="cascade-d-contact-form">
-            <h3>Contact Us</h3>
-            <div class="cascade-d-form-group">
-              <label for="cascade-d-name">Name</label>
-              <input
-                placeholder="Enter your full name"
-                type="text"
-                id="cascade-d-name"
-                name="name"
-                required
-              />
+            <h3 class="cascade-d-form-heading">Contact Us</h3>
+
+            <div class="cascade-d-form-row">
+              <div class="cascade-d-form-group">
+                <label for="cascade-d-firstname">Name</label>
+                <input
+                  placeholder="Enter your full name"
+                  type="text"
+                  id="cascade-d-firstname"
+                  name="firstname"
+                  required
+                />
+              </div>
+
+              <div class="cascade-d-form-group">
+                <label for="cascade-d-lastname">Lastname</label>
+                <input
+                  placeholder="Enter your last name"
+                  type="text"
+                  id="cascade-d-lastname"
+                  name="lastname"
+                  required
+                />
+              </div>
             </div>
+
             <div class="cascade-d-form-group">
               <label for="cascade-d-email">Email Address</label>
               <input
@@ -130,25 +145,26 @@
               />
             </div>
             <div class="cascade-d-form-group">
-              <label for="cascade-d-phone">Phone</label>
+              <label for="cascade-d-name">Your Number</label>
               <input
-                placeholder="Enter your phone number"
-                type="tel"
-                id="cascade-d-phone"
-                name="phone"
+                placeholder="Enter your number"
+                type="number"
+                id="cascade-d-name"
+                name="name"
                 required
               />
             </div>
             <div class="cascade-d-form-group">
-              <label for="cascade-d-suburb">Suburb</label>
+              <label for="cascade-d-phone">Business Name</label>
               <input
-                placeholder="Enter your suburb or area"
-                type="text"
-                id="cascade-d-suburb"
-                name="suburb"
-                required
+                placeholder="Enter your business name"
+                type="tel"
+                id="cascade-d-phone"
+                name="phone"
+                requireda
               />
             </div>
+
             <div class="cascade-d-form-group">
               <label for="cascade-d-message">Message</label>
               <textarea
@@ -158,6 +174,7 @@
                 required
               ></textarea>
             </div>
+
             <button
               type="submit"
               class="cascade-d-submit-btn cascade-d-btn-filled cascade-d-btn"
@@ -172,7 +189,10 @@
     <section class="cascade-d-services-section" id="services">
       <div class="cascade-wrapper">
         <div class="cascade-d-text-center">
-          <h2 class="cascade-d-heading">Specialist Bookkeepers In {{city}}</h2>
+          <h2 class="cascade-d-heading">
+            Outsource Your Bookkeeper in Four Easy Steps
+          </h2>
+          <div class="cascade-line cascade-line-steps"></div>
           <p class="cascade-d-paragraph">
             Most business owners waste hours every month trying to make sense of
             spreadsheets and bank statements—only to still feel unsure. That’s
@@ -183,79 +203,64 @@
 
         <div class="cascade-d-cards-grid-services">
           <!-- Repeatable Service Cards -->
-          <div class="cascade-d-card-services">
-            <img
-              src="./assets/logo-service-icon.png"
-              alt="Community Access"
-              class="cascade-d-card-services-img"
-            />
-            <div class="cascade-d-card-services-body">
-              <h3 class="cascade-d-card-services-title">Real-Time Reporting</h3>
-              <p class="cascade-d-card-services-desc">
-                Always know where your business stands.
-              </p>
-            </div>
-          </div>
 
           <div class="cascade-d-card-services">
             <img
-              src="./assets/logo-service-icon.png"
+              src="./assets/logo-service-icon-1.png"
               alt="Daily Living Support"
               class="cascade-d-card-services-img"
             />
             <div class="cascade-d-card-services-body">
-              <h3 class="cascade-d-card-services-title">
-                Tailored Service Packages
-              </h3>
+              <h3 class="cascade-d-card-services-title">Contact us</h3>
               <p class="cascade-d-card-services-desc">
-                Pay only for what you need.
+                Reach out to discuss your business needs and bookkeeping goals.
               </p>
             </div>
           </div>
 
           <div class="cascade-d-card-services">
             <img
-              src="./assets/logo-service-icon.png"
+              src="./assets/logo-service-icon-2.png"
               alt="Transport Services"
               class="cascade-d-card-services-img"
             />
             <div class="cascade-d-card-services-body">
-              <h3 class="cascade-d-card-services-title">
-                No Long-Term Contracts
-              </h3>
+              <h3 class="cascade-d-card-services-title">Strategy session</h3>
               <p class="cascade-d-card-services-desc">
-                We earn your trust monthly.
+                We’ll map out a tailored plan to align with your operations.
               </p>
             </div>
           </div>
 
           <div class="cascade-d-card-services">
             <img
-              src="./assets/logo-service-icon.png"
+              src="./assets/logo-service-icon-3.png"
               alt="Personal Care"
               class="cascade-d-card-services-img"
             />
             <div class="cascade-d-card-services-body">
               <h3 class="cascade-d-card-services-title">
-                Tax-Ready Books Guaranteed
+                Finance & systems review
               </h3>
               <p class="cascade-d-card-services-desc">
-                Never scramble during tax season again.
+                Our experts assess your current setup for efficiency and
+                accuracy.
               </p>
             </div>
           </div>
           <div class="cascade-d-card-services">
             <img
-              src="./assets/logo-service-icon.png"
+              src="./assets/logo-service-icon-4.png"
               alt="Personal Care"
               class="cascade-d-card-services-img"
             />
             <div class="cascade-d-card-services-body">
               <h3 class="cascade-d-card-services-title">
-                Tax-Ready Books Guaranteed
+                Streamlined systems & outcomes
               </h3>
               <p class="cascade-d-card-services-desc">
-                Never scramble during tax season again.
+                Enjoy simplified processes, clear reporting, and more time to
+                focus on growth.
               </p>
             </div>
           </div>
@@ -276,8 +281,10 @@
       <div class="cascade-wrapper">
         <div class="cascade-d-text-center">
           <p class="cascade-d-subheading">Excellence</p>
-          <h2 class="cascade-d-heading">What Sets Arcanum Group Apart?</h2>
-          <p>
+          <h2 class="cascade-d-heading cascade-white-text">
+            What Sets Arcanum Group Apart?
+          </h2>
+          <p class="cascade-white-text">
             Success is predictable when built on strong financial systems. We go
             beyond traditional bookkeeping to provide a strategic advantage. Our
             approach includes:
@@ -358,7 +365,7 @@
             </p>
           </div>
         </div>
-        <p class="cascade-d-bottom-cta">
+        <p class="cascade-d-bottom-cta cascade-white-text">
           All services are fully customizable to your unique business needs.
         </p>
         <div class="cascade-d-wcu">
@@ -561,38 +568,55 @@
       <div class="cascade-wrapper cascade-d-contact-wrapper cascade-flex">
         <!-- Left side image -->
         <div class="cascade-d-contact-left">
-          <div
-            style="
-              overflow: hidden;
-              resize: none;
-              max-width: 100%;
-              width: 100%;
-              height: 500px;
-            "
+          <h3 class="cascade-d-subheading">Contact Optimise Online</h3>
+          <div class="cascade-line"></div>
+          <h2 class="cascade-d-heading cascade-white-text">Lets Connect!</h2>
+          <p class="cascade-white-text">
+            Book a free 30-minute strategy session call with Calum or fill in
+            our contact form with your enquiry and our friendly team will be in
+            touch about how we can help. Book 30-Min Strategy Session
+          </p>
+          <a class="cascade-d-btn cascade-d-btn-ghost cascade-d-btn-contact"
+            >Book 30-Min Strategy Session</a
           >
-            <div
-              id="google-maps-canvas"
-              style="height: 100%; width: 100%; max-width: 100%"
-            >
-              <iframe
-                style="height: 100%; width: 100%; border: 0"
-                frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?q=Arcanum+Group+Inc,+Inverness+Drive+East,+Englewood,+CO,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              ></iframe>
+          <ul>
+            <li class="cascade-white-text cascade-d-contact-section-list">
+              <p>Mon - Fri (9:00am - 3:30pm)</p>
+            </li>
+          </ul>
+          <h3 class="cascade-white-text cascade-margin-top-bottom-10">
+            Get In Touch
+          </h3>
+          <a class="cascade-white-text" href="tel:+07 2140 7627"
+            >+07 2140 7627</a
+          ><br />
+          <a
+            class="cascade-white-text cascade-margin-top-bottom-10"
+            href="mailto:hello@grouparcanum.com"
+            >hello@grouparcanum.com</a
+          >
+          <div class="cascade-contact-left-socials cascade-flex cascade-gap-20">
+            <h4 class="cascade-white-text">Follow Us</h4>
+            <div class="cascade-contact-left-socials-icons">
+              <a href="#">
+                <i
+                  class="fa fa-facebook cascade-white-text"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#">
+                <i
+                  class="fa fa-instagram cascade-white-text"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a href="#">
+                <i
+                  class="fa fa-linkedin cascade-white-text"
+                  aria-hidden="true"
+                ></i>
+              </a>
             </div>
-            <a
-              class="embed-ded-maphtml"
-              rel="nofollow"
-              href="https://www.bootstrapskins.com/themes"
-              id="make-map-data"
-              >premium bootstrap themes</a
-            ><style>
-              #google-maps-canvas img {
-                max-height: none;
-                max-width: none !important;
-                background: none !important;
-              }
-            </style>
           </div>
         </div>
 
@@ -601,15 +625,28 @@
           <form class="cascade-d-contact-form-alt">
             <h3 class="cascade-d-form-heading">Contact Us</h3>
 
-            <div class="cascade-d-form-group">
-              <label for="cascade-d-name">Name</label>
-              <input
-                placeholder="Enter your full name"
-                type="text"
-                id="cascade-d-name"
-                name="name"
-                required
-              />
+            <div class="cascade-d-form-row">
+              <div class="cascade-d-form-group">
+                <label for="cascade-d-firstname">Name</label>
+                <input
+                  placeholder="Enter your full name"
+                  type="text"
+                  id="cascade-d-firstname"
+                  name="firstname"
+                  required
+                />
+              </div>
+
+              <div class="cascade-d-form-group">
+                <label for="cascade-d-lastname">Lastname</label>
+                <input
+                  placeholder="Enter your last name"
+                  type="text"
+                  id="cascade-d-lastname"
+                  name="lastname"
+                  required
+                />
+              </div>
             </div>
 
             <div class="cascade-d-form-group">
@@ -622,26 +659,24 @@
                 required
               />
             </div>
-
             <div class="cascade-d-form-group">
-              <label for="cascade-d-phone">Phone</label>
+              <label for="cascade-d-name">Your Number</label>
               <input
-                placeholder="Enter your phone number"
-                type="tel"
-                id="cascade-d-phone"
-                name="phone"
+                placeholder="Enter your number"
+                type="number"
+                id="cascade-d-name"
+                name="name"
                 required
               />
             </div>
-
             <div class="cascade-d-form-group">
-              <label for="cascade-d-suburb">Suburb</label>
+              <label for="cascade-d-phone">Business Name</label>
               <input
-                placeholder="Enter your suburb or area"
-                type="text"
-                id="cascade-d-suburb"
-                name="suburb"
-                required
+                placeholder="Enter your business name"
+                type="tel"
+                id="cascade-d-phone"
+                name="phone"
+                requireda
               />
             </div>
 
@@ -825,10 +860,8 @@
             alt="Email Icon"
             class="cascade-d-footer-icon cascade-d-footer-icon-email"
           />
-          <a
-            href="mailto:admin@intracareservices.com.au"
-            class="cascade-d-footer-link"
-            >admin@intracareservices.com.au</a
+          <a href="mailto:hello@grouparcanum.com" class="cascade-d-footer-link"
+            >hello@grouparcanum.com</a
           >
         </div>
       </div>
@@ -837,7 +870,7 @@
       <div class="cascade-wrapper">
         <div class="cascade-d-footer-container">
           <div class="cascade-d-footer-left">
-            Copyright © 2025 Intracare Services
+            Copyright © 2025 Group Arcanum
           </div>
           <div class="cascade-d-footer-right">
             Website designed by Cascade Digital
