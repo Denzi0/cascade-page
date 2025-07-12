@@ -857,10 +857,6 @@ span.swiper-pagination-bullet {
     padding: 10px 20px;
   }
 
-  .cascade-d-btn-referral {
-    display: none;
-  }
-
   .cascade-d-logo img {
     height: 70px;
   }
@@ -903,11 +899,6 @@ span.swiper-pagination-bullet {
   }
 
   /* About Section */
-  .cascade-d-about-left-btn-container {
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  }
 
   /* Contact Form */
   .cascade-d-contact-form {
@@ -925,7 +916,9 @@ span.swiper-pagination-bullet {
     margin: 20px 15px;
   }
   .cascade-d-google-icon,
-  .cascade-contact-left-socials {
+  .cascade-contact-left-socials,
+  .cascade-d-btn-referral,
+  .cascade-d-about-left-btn-container {
     display: none;
   }
   .cascade-d-call-text {
