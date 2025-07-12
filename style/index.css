@@ -924,6 +924,13 @@ span.swiper-pagination-bullet {
   .cascade-d-contact-section li {
     margin: 20px 15px;
   }
+  .cascade-d-google-icon,
+  .cascade-contact-left-socials {
+    display: none;
+  }
+  .cascade-d-call-text {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 480px) {
   .cascade-d-about-list {
@@ -931,10 +938,6 @@ span.swiper-pagination-bullet {
   }
 }
 @media (max-width: 600px) {
-  .cascade-d-google-icon,
-  .cascade-contact-left-socials {
-    display: none;
-  }
   .cascade-d-contact-wrapper {
     padding: 0;
   }
