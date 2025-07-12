@@ -411,7 +411,6 @@ span.swiper-pagination-bullet {
   color: var(--cascade-dark);
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 20px;
 }
 
 .cascade-d-call-text a {
@@ -630,7 +629,7 @@ span.swiper-pagination-bullet {
   background-color: var(--cascade-dark);
 }
 .cascade-d-contact-section li {
-  margin-left: 20px;
+  margin: 0px 0px 0px 20px;
 }
 .cascade-d-contact-wrapper {
   flex-wrap: wrap;
@@ -822,7 +821,9 @@ span.swiper-pagination-bullet {
   .cascade-d-contact-wrapper {
     gap: 20px;
   }
-
+  .cascade-d-btn.cascade-d-btn-ghost.cascade-d-btn-contact {
+    margin: 10px 0px;
+  }
   .cascade-d-nav-toggle {
     display: flex;
   }
@@ -919,6 +920,9 @@ span.swiper-pagination-bullet {
   .cascade-d-form-group input,
   .cascade-d-form-group textarea {
     width: 100%;
+  }
+  .cascade-d-contact-section li {
+    margin: 20px 15px;
   }
 }
 @media (max-width: 480px) {
