@@ -96,11 +96,19 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px var(--cascade-btn-shadow);
 }
-
+.cascade-banner-wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .cascade-wrapper {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.cascade-video-banner-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .cascade-flex {
   display: flex;
@@ -204,18 +212,35 @@ img {
 
 /* Banner */
 .cascade-d-banner {
-  min-height: 100vh;
+  min-height: 115vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../assets/banner.jpg") no-repeat center center/cover;
   align-items: center;
   padding: 0 5%;
 }
-
+.cascade-video-banner-container {
+  justify-content: center;
+  margin-top: -300px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.cascade-video-banner-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 .cascade-d-banner-content {
   width: 100%;
   gap: 230px;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 5%;
 }
 
 .cascade-d-banner-left {
@@ -814,6 +839,15 @@ span.swiper-pagination-bullet {
   /* Navigation */
   .cascade-d-about-img {
     max-width: initial;
+  }
+  .cascade-video-banner-container {
+    margin-top: 0px;
+  }
+  .cascade-video-banner-wrapper {
+    padding: 20px;
+  }
+  .cascade-d-services-section {
+    padding: 15px 20px;
   }
   .cascade-d-footer-top > .cascade-d-footer-col:first-child {
     align-items: center;
