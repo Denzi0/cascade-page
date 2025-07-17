@@ -22,6 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+  list-style-type: none;
 }
 html {
   scroll-behavior: smooth;
@@ -218,6 +219,10 @@ img {
   align-items: center;
   padding: 0 5%;
 }
+.cascade-banner-list-container i {
+  margin-right: 10px;
+}
+
 .cascade-video-banner-container {
   justify-content: center;
   margin-top: -300px;
