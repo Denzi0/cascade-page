@@ -222,7 +222,9 @@ img {
 .cascade-banner-list-container i {
   margin-right: 10px;
 }
-
+.cascade-banner-list-container {
+  margin-bottom: 10px;
+}
 .cascade-video-banner-container {
   justify-content: center;
   margin-top: -300px;
@@ -260,7 +262,7 @@ img {
 }
 
 .cascade-d-banner-left p {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
