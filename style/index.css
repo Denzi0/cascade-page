@@ -147,7 +147,7 @@ img {
   gap: 30px;
 }
 
-.cascade-d-nav-menu a {
+.cascade-d-nav-menu a:not(.cascade-d-phone-btn) {
   text-transform: uppercase;
   font-weight: bold;
   color: black;
@@ -326,7 +326,7 @@ img {
 
 /* Services */
 .cascade-d-services-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
 
   /* background-color: var(--cascade-bg-light); */
 }
@@ -841,7 +841,11 @@ span.swiper-pagination-bullet {
 /* ============================= */
 /* RESPONSIVE STYLES */
 /* ============================= */
-
+@media (min-width: 1024px) {
+  .cascade-book-header {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   /* Navigation */
   .cascade-d-about-img {
@@ -888,7 +892,14 @@ span.swiper-pagination-bullet {
     padding: 20px 0;
     box-shadow: 0 8px 16px var(--cascade-hover-shadow);
   }
-
+  .cascade-banner-list-wrapper {
+    text-align: left;
+  }
+  .cascade-banner-list-container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
   .cascade-d-nav-menu.active {
     display: flex;
     top: 90px;
@@ -958,9 +969,12 @@ span.swiper-pagination-bullet {
   }
   .cascade-d-google-icon,
   .cascade-contact-left-socials,
-  .cascade-d-btn-referral,
-  .cascade-d-about-left-btn-container {
+  .cascade-d-btn-referral {
     display: none;
+  }
+  .cascade-d-about-left-btn-container {
+    display: flex;
+    justify-content: center;
   }
   .cascade-d-call-text {
     margin-top: 20px;
